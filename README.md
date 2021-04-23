@@ -16,7 +16,7 @@
 
 ## Результат выполнения задачи:
 ### исходный код приложения в github (только на github, публичный репозиторий)
-www
+https://github.com/IvanFierly/Test
 ### инструкция по разворачиванию приложения (в docker или локально)
 ```bash
 docker-compose up --build -d api
