@@ -1,0 +1,86 @@
+[{
+        "model": "auth.User",
+        "pk": 1,
+        "fields": {
+            "password": "123456",
+            "last_login": null,
+            "is_superuser": true,
+            "username": "Admin",
+            "is_staff": true,
+            "is_active": true
+        }
+    },
+    {
+        "model": "auth.User",
+        "pk": 2,
+        "fields": {
+            "password": "654321",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "User",
+            "is_staff": false,
+            "is_active": true
+        }
+    },
+    {
+        "model": "polls.Poll",
+        "pk": 1,
+        "fields": {
+            "title": "Опрос",
+            "start_date": "2021-04-23",
+            "end_date": "2999-12-31",
+            "description": "Пример опроса."
+        }
+    },
+    {
+        "model": "polls.Question",
+        "pk": 1,
+        "fields": {
+            "poll": 1,
+            "text": "ответ текстом",
+            "type": "TEXT"
+        }
+    },
+    {
+        "model": "polls.Question",
+        "pk": 2,
+        "fields": {
+            "poll": 1,
+            "text": "ответ с выбором одного варианта",
+            "type": "CHOICE"
+        }
+    },
+    {
+        "model": "polls.Question",
+        "pk": 3,
+        "fields": {
+            "poll": 1,
+            "text": "ответ с выбором нескольких вариантов",
+            "type": "MULTICHOICE"
+        }
+    },
+    {
+        "model": "polls.Choice",
+        "pk": 1,
+        "fields": {
+            "question": 1,
+            "text": "Введите текст"
+        }
+    },
+    {
+        "model": "polls.Choice",
+        "pk": 2,
+        "fields": {
+            "question": 2,
+            "text": "Правильно"
+        }
+    },
+    {
+        "model": "polls.Choice",
+        "pk": 3,
+        "fields": {
+            "question": 2,
+            "text": "Неправильно"
+        }
+    }
+]
